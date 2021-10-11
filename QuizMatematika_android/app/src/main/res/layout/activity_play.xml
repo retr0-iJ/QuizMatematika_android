@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PlayActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/bg_color">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:text="@string/quizmatematika" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_score"
+        android:layout_below="@+id/ll_header"
+        android:layout_alignEnd="@+id/ll_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:orientation="horizontal"
+        android:layout_marginRight="15dp"
+        android:layout_alignRight="@+id/ll_header">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:text="@string/score"
+            android:textSize="@dimen/playScore_txtSize"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/playScore_txtSize"
+            android:text="0"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:paddingTop="30dp"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="start">
+            <TextView
+                android:id="@+id/tv_quest_num1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/quest_txtSize"
+                android:text="96" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/quest_txtSize"
+                android:text=" + " />
+
+            <TextView
+                android:id="@+id/tv_quest_num2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/quest_txtSize"
+                android:text="6" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="40sp"
+                android:text=" = " />
+
+            <TextView
+                android:id="@+id/tv_quest_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="40sp"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/btn_num1"
+                android:layout_width="@dimen/btn_num_width"
+                android:layout_height="@dimen/btn_num_height"
+                android:layout_marginRight="10dp"
+                android:textSize="@dimen/btn_num_txtSize"
+                android:text="1"></Button>
+            <Button
+                android:id="@+id/btn_num2"
+                android:layout_width="80dp"
+                android:layout_height="@dimen/btn_num_height"
+                android:layout_marginRight="10dp"
+                android:textSize="@dimen/btn_num_txtSize"
+                android:text="2"></Button>
+            <Button
+                android:id="@+id/btn_num3"
+                android:layout_width="@dimen/btn_num_width"
+                android:layout_height="@dimen/btn_num_height"
+                android:textSize="@dimen/btn_num_txtSize"
+                android:text="3"></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/btn_num4"
+                android:layout_width="@dimen/btn_num_width"
+                android:layout_height="@dimen/btn_num_height"
+                android:layout_marginRight="10dp"
+                android:textSize="@dimen/btn_num_txtSize"
+                android:text="4"></Button>
+            <Button
+                android:id="@+id/btn_num5"
+                android:layout_width="80dp"
+                android:layout_height="@dimen/btn_num_height"
+                android:layout_marginRight="10dp"
+                android:textSize="@dimen/btn_num_txtSize"
+                android:text="5"></Button>
+            <Button
+                android:id="@+id/btn_num6"
+                android:layout_width="@dimen/btn_num_width"
+                android:layout_height="@dimen/btn_num_height"
+                android:textSize="@dimen/btn_num_txtSize"
+                android:text="6"></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/btn_num7"
+                android:layout_width="@dimen/btn_num_width"
+                android:layout_height="@dimen/btn_num_height"
+                android:layout_marginRight="10dp"
+                android:textSize="@dimen/btn_num_txtSize"
+                android:text="7"></Button>
+            <Button
+                android:id="@+id/btn_num8"
+                android:layout_width="80dp"
+                android:layout_height="@dimen/btn_num_height"
+                android:layout_marginRight="10dp"
+                android:textSize="@dimen/btn_num_txtSize"
+                android:text="8"></Button>
+            <Button
+                android:id="@+id/btn_num9"
+                android:layout_width="@dimen/btn_num_width"
+                android:layout_height="@dimen/btn_num_height"
+                android:textSize="@dimen/btn_num_txtSize"
+                android:text="9"></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="110dp"
+            >
+            <Button
+                android:id="@+id/btn_num0"
+                android:layout_width="80dp"
+                android:layout_height="@dimen/btn_num_height"
+                android:layout_marginRight="10dp"
+                android:textSize="@dimen/btn_num_txtSize"
+                android:text="0"></Button>
+            <Button
+                android:id="@+id/btn_erase"
+                android:layout_width="@dimen/btn_num_width"
+                android:layout_height="@dimen/btn_num_height"
+                android:textSize="@dimen/btn_num_txtSize"
+                android:text="@string/erase"></Button>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="110dp"
+            android:layout_height="55dp"
+            android:shadowColor="@color/btn_submit"
+            android:textSize="@dimen/btn_num_txtSize"
+            android:text="@string/submit"></Button>
+
+    </LinearLayout>
+
+</RelativeLayout>

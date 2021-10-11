@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btn_num_width">100dp</dimen>
+    <dimen name="btn_num_height">50dp</dimen>
+    <dimen name="btn_num_txtSize">16sp</dimen>
+    <dimen name="view_score_txtSize">23sp</dimen>
+    <dimen name="quest_txtSize">35sp</dimen>
+    <dimen name="playScore_txtSize">25sp</dimen>
+</resources>
